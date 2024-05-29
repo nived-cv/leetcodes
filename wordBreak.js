@@ -4,24 +4,28 @@
  * @return {string[]}
  */
 const wordBreak = (string, dict) => {
+
     const wordMap = {}
+
+    for(let word of dict){
+        const matches  = string.
+
+        console.log(matches.next)
+    }
     
 }
 
 const testCases = [
-    ['catsanddog', ["cat","cats","and","sand","dog"]]
+    ['pineapplepenapple', ["apple","pen","applepen","pine","pineapple"]]
 ]
 
-/**
- * @param {Function} testFn 
- * @param {Array} testCases 
- */
-const test = (testFn, testCases) => {
-    testCases.forEach((testCase) => {
-        const result = testFn(...testCase)
-        console.log('result :: ', result)
-    })
-}
-
-// test(wordBreak, testCases)
 console.log(wordBreak(...testCases[0]))
+
+/**
+ *          root
+ * cat                  cats
+ * 
+ * sand                 and
+ * 
+ * dog                  dog
+ */
