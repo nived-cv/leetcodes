@@ -7,20 +7,6 @@
 
 const minKBitFlips = (nums, k) => {
 
-    let count = 1
-    while(count < nums.length - k + 1){
-
-        const index = nums.indexOf(0)
-        
-        for(let i = index; i < index + k; i++){
-            nums[i] = !nums[i]
-        }
-
-        if(nums.indexOf(0) === -1){
-            return count
-        }
-        count++
-    }
 }
 
 const testCases = [
@@ -34,4 +20,3 @@ const test = (testCases, testFn) => {
 }
 
 test(testCases, minKBitFlips)
-
